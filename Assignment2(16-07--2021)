@@ -1,30 +1,28 @@
-import java.util.*;
-class assign1july16
-{
- public static void main(String arg[])
- {
-	Scanner sc=new Scanner(System.in);
-ArrayList<Integer> arr=new ArrayList<Integer>();
-	System.out.print("Enter n value : ");
-	int n=sc.nextInt();
 
-	System.out.print("Enter array values : ");
-	for(int i=0;i<n;i++)
-	   arr.add(sc.nextInt());
-	
-	System.out.print("Enter values to search, replace : ");
-	
-	int key=sc.nextInt();
-        int x=sc.nextInt();
-	boolean b=arr.contains(key);
-	
-	if(b ==false)
-	System.out.println("output: "+b);
-	else
-	{
-	arr.set(arr.indexOf(key),x);
-	System.out.println("output: "+arr);
-	}
-	
- }
+import java.util.*;
+class Test
+{
+ public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n;
+    ArrayList<Integer>T=new ArrayList<Integer>();
+    System.out.print("Entersize");
+    n=sc.nextInt();
+     System.out.print("Enter Array elements:"); 
+    for(int i=0;i<n;i++)
+    T.add(sc.nextInt());
+     System.out.print("Enter key element:");
+    int key=sc.nextInt();
+    if(T.contains(key))
+{
+      System.out.print("Enter m:");
+    int m=sc.nextInt();
+    T.set(T.indexOf(key),m);
+      System.out.print(T);
+}
+else
+ System.out.print("false");
+  
+   }
 }
